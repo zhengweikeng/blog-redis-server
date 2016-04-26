@@ -1,9 +1,9 @@
 const redis = require('./utils/redis')
-const posts = require('./lib/posts')
+const postsInit = require('./lib/posts-init')
 
 module.exports = app = () => {
   const redisClient = redis.client()
-  posts.reloadBaseInfoFromGithub()
+  postsInit()
 }
 
 if (!module.parent) {
