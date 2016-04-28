@@ -6,11 +6,12 @@ const generateBaseInfoKey = (key) => {
 }
 
 const generateBaseInfo = (title) => {
+  const baseInfos = {}
   if (title.indexOf('.md') > 0) {
     title = title.substring(0, title.indexOf('.md') - 1)
+    baseInfos.ext = 'md'
   }
   const infos = title.split('#')
-  const baseInfos = {}
   infos.forEach((info, i) => {
     if (i === 0) {
       baseInfos.title = info

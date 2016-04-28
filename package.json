@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js"
+    "dev": "clear=true node server.js",
+    "no-init": "init_pass=true node server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
