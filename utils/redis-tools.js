@@ -7,8 +7,8 @@ const generateBaseInfoKey = (key) => {
 
 const generateBaseInfo = (title) => {
   const baseInfos = {}
-  if (title.indexOf('.md') > 0) {
-    title = title.substring(0, title.indexOf('.md') - 1)
+  if (title.lastIndexOf('.md') > 0) {
+    title = title.substring(0, title.indexOf('.md'))
     baseInfos.ext = 'md'
   }
   const infos = title.split('#')
