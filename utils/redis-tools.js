@@ -17,12 +17,13 @@ const generateBaseInfo = (title) => {
       baseInfos.title = info
     }
     if (i === 1) {
-      baseInfos.postTime = info
+      baseInfos.tag = info.split(',')
     }
     if (i === 2) {
-      baseInfos.tag = info
+      baseInfos.postTime = info
     }
   })
+  
   return baseInfos
 }
 

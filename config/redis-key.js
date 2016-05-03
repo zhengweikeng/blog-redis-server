@@ -1,4 +1,5 @@
 module.exports = {
   YEAR: 'year',
-  BASEINFO: 'posts-info'
+  BASEINFO: 'posts-info',
+  TAGS: 'tags'
 }

@@ -21,7 +21,8 @@ const punctuationMap = {
   '！': '!', 
   '（': '(', 
   '）': ')', 
-  '＝': '='
+  '＝': '=',
+  ' ': ''
 }
 
 const md5 = (text) => {
@@ -30,7 +31,6 @@ const md5 = (text) => {
 
 const chinese2pinyin = (chineseText) => {
   Object.keys(punctuationMap).forEach((cnPunc) => {
-    console.log(cnPunc)
     chineseText = chineseText.replace(new RegExp(cnPunc, 'g'), punctuationMap[cnPunc])
   })
   const pinyins = pinyin(chineseText, {style: pinyin.STYLE_NORMAL})
