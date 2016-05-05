@@ -11,11 +11,13 @@ module.exports = {
         console.log('redis connect success!')
       })
       client.on('error', (err) => {
-        console.log('redis connect error!')
         console.log(`error message: ${err}`)
         process.exit(1)
       })
     }
     return client
+  },
+  createClient() {
+    return redis.createClient(redisConfig)
   }
 }

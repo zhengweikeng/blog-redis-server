@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bunyan": "^1.8.1",
     "cheerio": "^0.20.0",
     "debug": "^2.2.0",
     "lodash": "^4.11.1",

@@ -1,5 +1,9 @@
 module.exports = {
   YEAR: 'year',
   BASEINFO: 'posts-info',
-  TAGS: 'tags'
+  TAGS: 'tags',
+  
+  pubsub: {
+    RELOAD: 'reload'
+  }
 }
