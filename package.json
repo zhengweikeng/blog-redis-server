@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "clear=true node server.js",
     "no-init": "init_pass=true node server.js",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production clear=true node server.js"
   },
   "author": "",
   "license": "ISC",

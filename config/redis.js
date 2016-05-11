@@ -1,3 +1,4 @@
+const redisPassword = process.env.redis_pass || ''
 const config = {
   development: {
     host: '127.0.0.1',
@@ -5,7 +6,8 @@ const config = {
   },
   production: {
     host: '115.28.176.80',
-    port: 6379
+    port: 6379,
+    password: redisPassword
   }
 }
 
