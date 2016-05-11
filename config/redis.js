@@ -4,7 +4,7 @@ const config = {
     port: 6379
   },
   production: {
-    host: '127.0.0.1',
+    host: '115.28.176.80',
     port: 6379
   }
 }
