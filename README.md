@@ -2,14 +2,23 @@
 
 node.js version >= 6.0.0
 
-开发
+### 开发
 ```bash
 npm run dev
 ```
 
-部署
+### docker部署
+应用部署于daocloud
 ```bash
-npm i pm2 -g
+docker login daocloud.io
 
-NODE_ENV=production redis_pass=xxxx  pm2 start server.js --name blog-server
+docker build -t daocloud.io/zhengweikeng/blog-redis-server .
+
+# 可以检查一下
+docker run -it daocloud.io/zhengweikeng/blog-redis-server /bin/bash
+
+# push 到 daocloud
+docker push daocloud.io/zhengweikeng/blog-redis-server
 ```
+
+redis采用daocloud提供的redis服务

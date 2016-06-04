@@ -5,9 +5,9 @@ const config = {
     port: 6379
   },
   production: {
-    host: '115.28.176.80',
-    port: 6379,
-    password: redisPassword
+    host: process.env.REDIS_PORT_6379_TCP_ADDR,
+    port: process.env.REDIS_PORT_6379_TCP_PORT,
+    password: process.env.REDIS_PASSWORD
   }
 }
 
